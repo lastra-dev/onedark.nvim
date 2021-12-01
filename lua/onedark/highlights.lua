@@ -34,7 +34,8 @@ local colors = {
     Orange = {fg = c.orange},
     Green = {fg = c.green},
     Blue = {fg = c.blue},
-    Purple = {fg = c.purple}
+    Purple = {fg = c.purple},
+    DraculaBg = "#282a36",
 }
 hl.common = {
     Normal = {fg = c.fg, bg = cfg.bg and c.none or c.bg0},
@@ -50,8 +51,8 @@ hl.common = {
     lCursor = {reverse = true},
     CursorIM = {reverse = true},
     CursorColumn = {bg = c.bg1},
-    CursorLine = {bg = c.bg1},
-    ColorColumn = {bg = c.bg1},
+    CursorLine = {bg = colors.DraculaBg},
+    ColorColumn = {bg = colors.DraculaBg},
     CursorLineNr = {fg = c.fg},
     LineNr = {fg = c.grey},
     Conceal = {fg = c.grey, bg = c.bg1},
@@ -73,8 +74,8 @@ hl.common = {
     NonText = {fg = c.grey},
     Whitespace = {fg = c.grey},
     SpecialKey = {fg = c.grey},
-    Pmenu = {fg = c.fg, bg = c.bg1},
-    PmenuSbar = {fg = c.none, bg = c.bg1},
+    Pmenu = {fg = c.fg, bg = colors.DraculaBg},
+    PmenuSbar = {fg = c.none, bg = colors.DraculaBg},
     PmenuSel = {fg = c.bg0, bg = c.bg_blue},
     WildMenu = {fg = c.bg0, bg = c.blue},
     PmenuThumb = {fg = c.none, bg = c.grey},
@@ -311,10 +312,10 @@ hl.plugins.gitsigns = {
 }
 
 hl.plugins.nvim_tree = {
-    NvimTreeNormal = { fg = c.fg, bg = cfg.bg and c.none or c.bg_d },
     NvimTreeVertSplit = { fg = c.bg_d, bg = cfg.bg and c.none or c.bg_d },
-    NvimTreeEndOfBuffer = { fg = cfg.hide_ending_tildes and c.bg_d or c.bg2, bg =  cfg.bg and c.none or c.bg_d },
-    NvimTreeRootFolder = { fg = c.orange, bold = true },
+    NvimTreeEndOfBuffer = { fg = cfg.hide_ending_tildes and c.bg_d or c.bg2, bg = colors.DraculaBg},
+    NvimTreeNormal = { fg = c.fg, bg = colors.DraculaBg },
+    NvimTreeRootFolder = { fg = c.green, bold =true},
     NvimTreeGitDirty = colors.Yellow,
     NvimTreeGitNew = colors.Green,
     NvimTreeGitDeleted = colors.Red,

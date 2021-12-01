@@ -338,9 +338,9 @@ hl.plugins.telescope = {
 
 hl.plugins.dashboard = {
     DashboardShortCut = colors.Blue,
-    DashboardHeader = colors.Yellow,
+    DashboardHeader = colors.Green,
     DashboardCenter = colors.Cyan,
-    DashboardFooter = { fg = c.dark_red, italic = true}
+    DashboardFooter = { fg = c.cyan, italic = true}
 }
 
 hl.plugins.symbols_outline = {

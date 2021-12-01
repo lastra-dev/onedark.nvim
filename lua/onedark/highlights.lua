@@ -40,7 +40,7 @@ local colors = {
 hl.common = {
     Normal = {fg = c.fg, bg = cfg.bg and c.none or c.bg0},
     Terminal = {fg = c.fg, bg = cfg.bg and c.none or c.bg0},
-    EndOfBuffer = {fg = cfg.hide_ending_tildes and c.bg0 or c.bg2, bg = cfg.bg and c.none or c.bg0},
+    EndOfBuffer = {fg = cfg.hide_ending_tildes and colors.DraculaBg or c.bg2, bg = cfg.bg and c.none or c.bg0},
     FoldColumn = {fg = c.fg, bg = cfg.bg and c.none or c.bg1},
     Folded = {fg = c.fg, bg = cfg.bg and c.none or c.bg1},
     SignColumn = {fg = c.fg, bg = cfg.bg and c.none or c.bg0},
@@ -312,8 +312,8 @@ hl.plugins.gitsigns = {
 }
 
 hl.plugins.nvim_tree = {
-    NvimTreeVertSplit = { fg = c.bg_d, bg = cfg.bg and c.none or c.bg_d },
-    NvimTreeEndOfBuffer = { fg = cfg.hide_ending_tildes and c.bg_d or c.bg2, bg = colors.DraculaBg},
+    --NvimTreeVertSplit = { fg = c.bg_d, bg = cfg.bg and c.none or c.bg_d },
+    NvimTreeEndOfBuffer = { fg = cfg.hide_ending_tildes and colors.DraculaBg or c.bg2, bg = colors.DraculaBg},
     NvimTreeNormal = { fg = c.fg, bg = colors.DraculaBg },
     NvimTreeRootFolder = { fg = c.green, bold =true},
     NvimTreeGitDirty = colors.Yellow,

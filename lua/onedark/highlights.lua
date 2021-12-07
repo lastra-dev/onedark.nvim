@@ -247,9 +247,22 @@ hl.plugins.cmp = {
     CmpItemAbbr = colors.Fg,
     CmpItemAbbrDeprecated = colors.Fg,
     CmpItemAbbrMatch = colors.Cyan,
-    CmpItemAbbrMatchFuzzy = { fg = c.cyan, underline = true },
+    CmpItemAbbrMatchFuzzy = { fg = c.cyan, underline = false },
     CmpItemKind = colors.Purple,
     CmpItemMenu = colors.LightGrey,
+
+    CmpItemKindText = colors.Fg,
+    CmpItemKindFunction = colors.Blue,
+    CmpItemKindMethod = colors.Blue,
+    CmpItemKindVariable = colors.Cyan,
+    CmpItemKindInterface = colors.Cyan,
+    CmpItemKindEnum = colors.Cyan,
+    CmpItemKindKeyword = colors.Purple,
+    CmpItemKindProperty = colors.Red,
+    CmpItemKindClass = colors.Red,
+    CmpItemKindModule = colors.Yellow,
+    CmpItemKindSnippet = colors.Green,
+    CmpItemKindConstructor = colors.Yellow,
 }
 
 hl.plugins.whichkey = {
